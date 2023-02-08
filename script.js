@@ -1423,7 +1423,7 @@ function average()
 
 let showimg = document.querySelector(".show-image");
 let hideimg = document.querySelector(".hide-image");
-let imgdata = document.querySelector(".imagedetails img");
+let imgdata = document.querySelector(".image-details");
 
 function showimage()
 {
@@ -1440,7 +1440,7 @@ function showimage()
 {
     if(imgdata.classList.contains("image-details"))
     {
-        imgdata.classList.add("show");
+        imgdata.classList.remove("show");
     }
 
 }

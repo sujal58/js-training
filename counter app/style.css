@@ -1,0 +1,41 @@
+#counter{
+display:block;
+font-size: 200px;
+padding-left: 0.7em;
+}
+
+.counterapp{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    bottom: 50%;
+    justify-content: center;
+    
+}
+
+.counterapp .btn #decbtn{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.counterapp .btn #decbtn{
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.counterapp .btn #resbtn{
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 20px;
+
+}
+
+.counterapp .btn #incbtn{
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: green;
+
+}

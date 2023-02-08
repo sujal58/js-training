@@ -74,13 +74,14 @@ button{
 }
 
 .image-details{
-   display: block;
+   display: none;
    height: 20rem;
    width: auto;
    border-radius: 20%;
    border: 2px solid white;
+
 }
 
-.imagedetails.hide{
+.imagedetails.show{
     display: block;
 }
