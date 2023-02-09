@@ -50,3 +50,70 @@ li{
     font-stretch: normal;
 }
 
+
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#add-task-container{
+    text-align: center;
+}
+
+#add-task-container input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3939;
+    color: white;
+    font-size: 18px;
+    width: 96%;
+}
+
+#content-list{
+    background-color: #f8f5f5;
+    color: red;
+    width: 500px;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+
+#to-do-list h3{
+    font-size: 20px;
+}
+
+#to-do-list{
+    padding: 0px;
+
+    margin-top: 20px;
+    list-style: none;
+}
+
+#to-do-list li{
+    position: relative;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: 1px solid chocolate;
+    border-radius: 2px;
+    padding-right: 20px;
+    text-align: center ;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete{
+    float: right;
+    background-color: #e20a0a;
+    border: none;
+    color: wheat;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 6px;
+    cursor: pointer;
+}

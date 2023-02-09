@@ -29,16 +29,67 @@ function showselectedmessage(e)
 list.addEventListener("click", showselectedmessage);
 
 
-const sub = document.querySelector("#selectlist")
-const subselect = document.querySelector("#subselect")
+// sub select ......................................
+
+
+let sub = document.getElementById("selectlist");
+const subselect = document.querySelector("#subselect");
 
 function subject_list(e)
 {
     const subvalue = e.target.value;
-    const subdesign = e.target;
     console.log(subvalue);
-    subselect.innerText = `${subvalue} is choosed.`
-
-
+    //subselect.innerText = `${subvalue} is choosed.`
+    if (subvalue === "maths") {
+        subselect.innerText = `Mathematics is choosed.`
+    }
+    else if (subvalue === "ds") {
+        subselect.innerText = `Discrete Structure is choosed.`
+    }
+    else if (subvalue === "mp") {
+        subselect.innerText = `Microprocessor is choosed.`
+    }
+    else if (subvalue === "oop") {
+        subselect.innerText = `Object Oriented Programming is choosed.` 
+    }
+    
 }
-sub.addEventListener("click", subject_list)
+sub.addEventListener("change", subject_list)
+
+
+
+//todo list.....................................
+
+const items = document.querySelector("#input-task");
+const todobox = document.querySelector("#to-do-list");
+const nolistfound = document.querySelector("#no-data");
+const del = document.querySelector(".delete");
+
+items.addEventListener("keyup", ((e) =>{
+    if (e.key === "Enter") {
+        nolistfound.style.display = "none"
+        addToDo(e.target.value);
+        e.target.value = " ";
+    }
+    
+}))
+
+
+const addToDo = (item) => {
+    let listitem = null;
+    listitem = document.createElement("li")
+    listitem.setAttribute("class","to-do-list")
+    listitem.innerHTML = `${item} <button class="delete">X</button>`
+    console.log(listitem);
+    todobox.appendChild(listitem)
+
+    listitem.addEventListener("click", (() => {
+        listitem.style.textDecoration = "line-through";
+    }))
+
+    listitem.addEventListener("click", (() => {
+        confirm("Are you sure?")
+        listitem.remove();
+    }))
+}
+
