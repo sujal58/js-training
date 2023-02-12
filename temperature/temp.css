@@ -1,0 +1,28 @@
+*{
+background-color: antiquewhite;
+}
+
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    text-decoration: underline;
+}
+
+#subbutton{
+    cursor: pointer;
+
+}
+
+#subbutton:hover{
+    background: green;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
