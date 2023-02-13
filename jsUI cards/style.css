@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    padding: 0 4rem;
+}
+
+#employee-details-form{
+    height: auto;
+}
+
+.employee-details-form-container{
+    margin: 1rem;
+    background-color: #fdfafa;
+    border-radius: 10px;
+
+}
+
+.details-collector-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 20px;
+}
+
+.form-group:nth-child(2n){
+    justify-content: end;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.form-group label{
+    width: 95%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.form-group input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+.form-group #save{
+    background-color: blue;
+    color: aliceblue;
+}
+
+.container{
+    text-align: center;
+}
+
+.user-details-cards-container{
+    margin: 1rem;
+}
+
+.user-details-cards-container .cards{
+    display: flex;
+    gap: 2rem;
+    flex: wrap;
+    padding: 2rem;
+}
+
+.user-details-cards-container .card{
+    text-align: center;
+    background-color: rgb(234, 238, 241);
+    padding: 10px;
+}
+
+.user-details-cards-container .card-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: nowrap;  
+    gap: 3rem;
+    padding: 10px;
+
+}
+
+.trash-container{
+    width: 50%;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.trash-container i{
+    color: white;
+    padding: 8px;
+}
+
+.error-message{
+    background-color: orangered;
+    color: #fdfafa;
+    padding: 0.5rem;
+}
+
+footer{
+    text-align: center;
+}
