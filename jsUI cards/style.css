@@ -77,7 +77,10 @@ body{
     gap: 2rem;
     flex: wrap;
     padding: 2rem;
+    overflow: auto;
 }
+
+
 
 .user-details-cards-container .card{
     text-align: center;
@@ -90,7 +93,7 @@ body{
     align-items: center;
     justify-content: center; 
     flex-wrap: nowrap;  
-    gap: 3rem;
+    gap: 2rem;
     padding: 10px;
 
 }

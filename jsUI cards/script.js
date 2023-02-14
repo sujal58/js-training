@@ -7,31 +7,32 @@ const mblnum = document.querySelector("#mobile-Number");
 const address = document.querySelector("#address")
 
 form.addEventListener("submit", function (e) {
+     e.preventDefault();
 
-    // console.log(fullname.value);
-    // console.log(email.value);
-    // console.log(mblnum.value);
-    // console.log(address.value);
-
-
-    //steps
-    //take value from inputs
+        // console.log(fullname.value);
+        // console.log(email.value);
+        // console.log(mblnum.value);
+        // console.log(address.value);
 
 
-    //checking empty of the box
+        //steps
+        //take value from inputs
 
-    if (fullname.value === "" && email.value === "" && mblnum.value === "" && address.value === "") {
-        const errEl = document.createElement("div");
-        errEl.setAttribute("class", "error-message");
-        errEl.innerText = "Please fill in the fields";
-        form.insertAdjacentElement("beforebegin", errEl);
 
-        //remove message after sometime
-        setTimeout(() => {
-            errEl.remove();
-        }, 2000);
-    }
-    else {
+        //checking empty of the box
+
+        // if (fullname.value === "" && email.value === "" && mblnum.value === "" && address.value === "") {
+        //     const errEl = document.createElement("div");
+        //     errEl.setAttribute("class", "error-message");
+        //     errEl.innerText = "Please fill in the fields";
+        //     form.insertAdjacentElement("beforebegin", errEl);
+
+        //     //remove message after sometime
+        //     setTimeout(() => {
+        //         errEl.remove();
+        //     }, 2000);
+        // }
+        
 
 
         //create elements div with class name  cards
@@ -92,9 +93,9 @@ form.addEventListener("submit", function (e) {
 
         //store it on the local storage
         
-    }
+    
 
-    e.preventDefault();
+    
 
 })
 

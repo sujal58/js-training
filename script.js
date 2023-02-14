@@ -1399,7 +1399,7 @@ function average()
 
  //document.querySelector(".btn-3").addEventListener("mouseover", average);
 
- */
+
 
 
  let showbtn = document.querySelector(".showmorebtn");
@@ -1446,3 +1446,36 @@ function showimage()
 }
  
 showimg.addEventListener("click", hideimage);
+
+
+ */
+
+
+class Animal
+{
+    constructor(name, color)
+    {
+        this.name = name;
+        this.color = color;
+    }
+
+    shout()
+    {
+        console.log(`${this.name} is shouting.`);
+    }
+}
+
+class monkey extends Animal{
+    details()
+    {
+        console.log(`The name of monkey is ${this.name}`);
+        console.log(`The color of monkey is ${this.color}`);
+    }
+}
+
+
+let animal1 = new Animal("Tiger");
+let monkey1 = new monkey("Brune ", "Brown");
+
+animal1.shout();
+monkey1.details();
