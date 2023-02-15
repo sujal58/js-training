@@ -1606,7 +1606,6 @@ class Coordinator extends staff
 
     displaydata()
     {
-        
         console.log(`Teacher ID: ${this.t_id}`);
         console.log(`Subject: ${this.subject}`);
         console.log(`Staff ID: ${this.s_id}`);
