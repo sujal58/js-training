@@ -1448,7 +1448,7 @@ function showimage()
 showimg.addEventListener("click", hideimage);
 
 
- */
+ 
 
 
 class Animal
@@ -1479,3 +1479,145 @@ let monkey1 = new monkey("Brune ", "Brown");
 
 animal1.shout();
 monkey1.details();
+
+
+
+
+
+
+class parent
+{
+    constructor(name, age)
+    {
+        this.name = name;
+        this.age = age;
+
+    }
+
+    getDetails()
+    {
+        console.log(`Name is: ${this.name}`);
+        console.log(`Age is: ${this.age}`);
+
+    }
+}
+
+class Child extends parent
+{
+     constructor(name, age, faculty)
+    {
+        super(name, age);
+        this.faculty = faculty;
+
+    }
+
+    getDetails()
+    {
+        super.getDetails();
+        // console.log(`Name is: ${this.name}`);
+        // console.log(`Age is: ${this.age}`);
+        console.log(`Facculty is: ${this.faculty}`);
+
+    }
+}
+
+let child1 = new Child("ABC", 24, "CSIT");
+child1.getDetails();
+
+
+*/
+
+
+class Account
+{
+    constructor(acc_no, balance, min_balance)
+    {
+        this.acc_no = acc_no;
+        this.balance = balance;
+        this.min_balance = min_balance
+    }
+
+    displayData()
+    {
+        console.log(`Account Number: ${this.acc_no}`);
+        console.log(`Account Balance: ${this.balance}`);
+        console.log(`Account min_balance: ${this.min_balance}`);
+    }
+
+    display_min_balance()
+    {
+        console.log(`Account min_balance: ${this.min_balance}`);
+
+    }
+
+}
+
+let data = [];
+let acc1 = new Account(991199, 1000000, 1000)
+let acc2 = new Account(991199, 1000000, 1000)
+let acc3 = new Account(991199, 1000000, 1000)
+let acc4 = new Account(991199, 1000000, 1000)
+let acc5 = new Account(991199, 1000000, 1000)
+
+data.push(acc1, acc2, acc3,acc4,acc5)
+console.log(data)
+
+data.forEach((value)=>{
+    value.displayData();
+    value.display_min_balance();
+})
+
+
+
+
+class Teacher
+{
+    constructor(t_id, subject)
+    {
+        this.t_id = t_id;
+        this.subject = subject
+    }
+
+    displaydata1()
+    {
+        
+    }
+}
+
+class staff extends Teacher
+{
+    constructor(t_id, subject, s_id, position)
+    {
+        super(t_id,subject);
+        this.s_id = s_id;
+        this.positon = position;
+    }
+}
+
+class Coordinator extends staff
+{
+    
+    constructor(t_id, subject, s_id,position, department)
+    {
+        super(t_id, subject, s_id, position);
+        this.department = department;
+    }
+
+
+    displaydata()
+    {
+        
+        console.log(`Teacher ID: ${this.t_id}`);
+        console.log(`Subject: ${this.subject}`);
+        console.log(`Staff ID: ${this.s_id}`);
+        console.log(`Position: ${this.position}`);
+        console.log(`Department: ${this.department}`);
+    }
+}
+
+
+
+
+let c1 = new Coordinator(1, "CSIT", 01,"1st", "SCIENCE");
+let c2 = new Coordinator(2, "PHYSICS", 02, "2nd", "science");
+console.log(c2);
