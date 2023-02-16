@@ -99,7 +99,20 @@ form.addEventListener("submit", function (e) {
          
 
         //store it on the local storage
-        const studentlist = [];
+        
+
+        if (localStorage.getItem("studentDetails") === null) {
+            const studentlist = [];
+            studentlist.push({fullname: fullname.value, email: email.value, mblnum: mblnum.value, address: address.value});
+            localStorage.setItem('studentDetails', JSON.stringify(studentlist));
+        }
+        else{
+            const studentlist = [];
+            studentlist = JSON.parse(localStorage.getItem("studentDetails"));
+            studentlist.push({fullname: fullname.value, email: email.value, mblnum: mblnum.value, address: address.value});
+            localStorage.setItem('studentDetails', JSON.stringify(studentlist));
+        }
+
 
 
 
