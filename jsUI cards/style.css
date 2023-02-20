@@ -75,9 +75,9 @@ body{
 
 .user-details-cards-container .row-cards{
     display: flex;
-    gap: 2rem;
-    flex: wrap;
-    padding: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -116,6 +116,12 @@ body{
 
 .error-message{
     background-color: orangered;
+    color: #fdfafa;
+    padding: 0.5rem;
+}
+
+.success-message{
+    background-color: green;
     color: #fdfafa;
     padding: 0.5rem;
 }
